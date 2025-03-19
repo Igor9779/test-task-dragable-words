@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  user-select: none;
+}
+
+#inputContainer {
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 5px;
+  width: 300px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#output {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 50px;
+  position: relative;
+}
+
+.char {
+  display: inline-block;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+}
+
+.selected {
+  background-color: yellow;
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+#selectionBox {
+  position: absolute;
+  border: 1px dashed blue;
+  background-color: rgba(0, 0, 255, 0.2);
+  display: none;
+  pointer-events: none;
+}
